@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line {
+    background-color: #0f284f;
+    width: 75vw;
+    margin: 3%;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 2px 1px #b5d1f2;
+    transition: all .35s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container:hover {
+    box-shadow: 0px 4px 15px #2E89C8;
+}
+
+.container-header {
+    display: flex;
+    margin-bottom: 10px;
+    align-content: baseline;
+}
+
+.animation-name {
+    margin: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    color: #2a3f60;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 7px 5px;
+    margin-left: 32px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 2px #2a3f60;
+    transition: all .35s ease;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+.button:hover, .button:focus, .button:active {
+    color: #F8F4FF;
+    background-color: #FFA42E;
+    box-shadow: 0 0 0 2px #FFA42E;
+}
+.myAnimations .button:hover, .button:focus, .button:active {
+    color: #F8F4FF;
+    background-color: #8d3f8d;
+    box-shadow: 0 0 0 2px #8d3f8d;
+}
+
+.block {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #8d3f8d;
+    border: 2px solid #421456;
+    border-radius: 5px;
+    color: white;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+.myAnimations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myAnimations .block {
+    background-color: #FFA42E;
+}
+.animationsLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
